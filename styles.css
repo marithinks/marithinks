@@ -1,33 +1,204 @@
-body {
-font-family: Georgia, serif;
-line-height: 1.6;
-margin: 40px auto;
-max-width: 700px;
-padding: 0 20px;
-background: #ffffff;
-color: #222;
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+/* Page background */
+
+body {
+
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+  color: #2a2a2a;
+
+  background-color: #f4f1ea;
+
+  /* garden illustration background */
+  background-image: url("garden-border.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  padding: 40px 20px;
+}
+
+
+/* Main reading column */
+
+.site {
+
+  max-width: 760px;
+  margin: 60px auto;
+
+  padding: 45px 55px;
+
+  background: white;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(0,0,0,0.06);
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+
+/* Header */
 
 header {
-margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
-h1 {
-font-weight: normal;
+
+.site-title {
+
+  font-size: 2.8rem;
+
+  font-weight: 400;
+
+  letter-spacing: -0.02em;
+
+  margin-bottom: 8px;
 }
+
+
+.tagline {
+
+  color: #6c6c6c;
+
+  font-size: 1rem;
+
+  margin-bottom: 20px;
+}
+
+
+/* Navigation */
+
+nav {
+
+  border-top: 1px solid #e5e2dc;
+
+  padding-top: 14px;
+}
+
 
 nav a {
-margin-right: 15px;
-text-decoration: none;
-color: #444;
+
+  text-decoration: none;
+
+  margin-right: 16px;
+
+  font-size: 0.95rem;
+
+  color: #3f665b;
+
+  transition: color .2s ease;
 }
+
 
 nav a:hover {
-text-decoration: underline;
+
+  color: #5c8b7d;
+
+  text-decoration: underline;
 }
 
+
+/* Main content */
+
+main {
+
+  font-size: 1.08rem;
+}
+
+
+h2 {
+
+  font-size: 1.6rem;
+
+  font-weight: 400;
+
+  margin-bottom: 15px;
+
+  margin-top: 10px;
+}
+
+
+p {
+
+  margin-bottom: 16px;
+}
+
+
+/* Lists */
+
+ul {
+
+  padding-left: 20px;
+
+  margin-bottom: 16px;
+}
+
+
+li {
+
+  margin-bottom: 8px;
+}
+
+
+/* Links */
+
+a {
+
+  color: #3f665b;
+}
+
+
+a:hover {
+
+  color: #5c8b7d;
+}
+
+
+/* Footer */
+
 footer {
-margin-top: 60px;
-font-size: 0.9em;
-color: #777;
+
+  text-align: center;
+
+  margin-top: 35px;
+
+  color: #8a8a8a;
+
+  font-size: 0.9rem;
+}
+
+
+/* Mobile adjustments */
+
+@media (max-width: 900px) {
+
+  body {
+
+    background-image: none;
+
+    background-color: #f4f1ea;
+
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .site {
+
+    padding: 35px 28px;
+
+    margin: 30px auto;
+
+  }
+
 }
